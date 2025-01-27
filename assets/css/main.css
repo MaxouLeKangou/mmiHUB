@@ -13,6 +13,15 @@
     --color-light-100: #E4E1F0;
     --color-light-200: #B8B5C2;
     --color-light-300: #868491;
+
+    --color-circle: #1E1B4B;
+
+    --text-base: clamp(0.875rem, 1.5vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.5vw, 1.375rem);
+    --text-xl: clamp(3.75rem, 5vw, 6.25rem);
+
+    --leading-tight: 100%;
+    --leading-base: 135%;
 }
 
 :root {
@@ -22,6 +31,13 @@
 
     --ui-bg: var(--color-dark-100);
     --ui-text: var(--color-light-100);
+}
+
+
+@layer components {
+    .gradient-text {
+        @apply inline-block bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text
+    }
 }
 
 .container {
