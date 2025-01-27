@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --font-sans: 'Karla';
+  
+    --color-primary: #A3E635;
+    --color-secondary: #2DD4BF;
+
+    --color-dark-100: #0E0C15;
+    --color-dark-200: #14111E;
+
+    --color-light-100: #E4E1F0;
+    --color-light-200: #B8B5C2;
+    --color-light-300: #868491;
+}
+
+:root {
+    --ui-primary: var(--color-primary);
+    --ui-secondary: var(--color-secondary);
+    --ui-neutral: var(--color-light-100);
+
+    --ui-bg: var(--color-dark-100);
+    --ui-text: var(--color-light-100);
+}
+
+.container {
+    @apply mx-auto max-w-[90rem]
+}
