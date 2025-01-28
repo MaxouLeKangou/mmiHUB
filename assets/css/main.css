@@ -16,6 +16,10 @@
 
     --color-circle: #1E1B4B;
 
+    --text-m-sm: 0.75rem;
+    --text-m-md: 0.875rem;
+    --text-m-base: 1rem;
+
     --text-d-sm: 1rem;
     --text-d-md: 1.125rem;
     --text-d-base: 1.25rem;
@@ -24,7 +28,8 @@
     --text-d-2xl: 3.75rem;
     --text-d-3xl: 5rem;
 
-    --text-big: clamp(3.75rem, 5vw, 6.25rem);
+    --text-m-big: clamp(2rem, 5vw, 4rem);
+    --text-d-big: clamp(3.75rem, 5vw, 6.875rem);
 
     --leading-tight: 100%;
     --leading-base: 135%;
@@ -72,5 +77,5 @@
 }
 
 .container {
-    @apply mx-auto max-w-[90rem]
+    @apply px-5 max-w-[90rem] sm:px-10 lg:px-5 lg:mx-auto
 }

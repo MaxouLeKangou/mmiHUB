@@ -1,5 +1,5 @@
 <template>
-    <header class="container h-[var(--header-height)] grid grid-cols-3 justify-between items-center">
+    <header class="hidden container h-[var(--header-height)] lg:grid grid-cols-3 justify-between items-center">
         <Logo/>
 
         <NavigationMenuRoot v-model="currentTrigger" class="relative z-10 flex w-full justify-center">
