@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { HomeTools } from '#components';
+
+</script>
+
 <template>
     <main class="container">
         <section class="relative min-h-[calc(100vh-var(--header-height))] flex flex-col justify-center lg:pb-[var(--header-height)]">
@@ -27,5 +32,7 @@
                 </div>
             </div>
         </section>
+
+        <HomeTools />
     </main>
 </template>
