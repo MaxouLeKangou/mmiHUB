@@ -6,7 +6,11 @@ export default defineAppConfig({
             compoundVariants: [
                 {
                   variant: 'solid',
-                  class: 'font-semibold text-[1rem] px-8 py-3 rounded-full cursor-pointer'
+                  class: 'font-semibold text-[0.875rem] px-6 py-2.5 rounded-full cursor-pointer lg:text-[1rem] lg:px-8 md:py-3'
+                },
+                {
+                    variant: 'outline',
+                    class: 'font-semibold text-[0.875rem] px-6 py-2.5 rounded-full cursor-pointer lg:text-[1rem] lg:px-8 md:py-3'
                 }
             ]
         }
