@@ -7,6 +7,8 @@ export type Tool = {
     title: string;
     society: string;
     description: string;
+    website?: string;
+    documentation?: string;
     tags: [];
     likes: [];
 

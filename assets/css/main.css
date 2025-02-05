@@ -47,6 +47,7 @@
     --ui-text: var(--color-light-100);
 
     --header-height: 7rem;
+    --header-bottom: 6.25rem;
 }
 
 
@@ -75,6 +76,26 @@
     
         &:hover:before {
             width: 35%;
+        }
+    }
+
+    .anim-link a {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0.063rem;
+            border-radius: 2rem;
+            transition: width 0.15s;
+
+            @apply bg-light-100;
+        }
+
+        &:hover:before {
+            width: 100%;
         }
     }
 }

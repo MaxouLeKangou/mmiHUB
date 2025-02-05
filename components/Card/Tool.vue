@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink to="/" class="flex flex-col gap-5 h-full bg-light-100/5 border-light-100/15 rounded-2xl p-7">
+    <NuxtLink :to="`/tools/${id}`" class="flex flex-col gap-5 h-full bg-light-100/5 border-light-100/15 rounded-2xl p-7">
         <div class="flex gap-5 items-center">
             <NuxtImg :src="thumbnail" class="object-cover w-16 h-16 rounded-xl"/>
 
@@ -18,22 +18,15 @@
         </ul>
 
         <div class="flex justify-between text-light-300">
-            <button class="cursor-pointer">
-                <BookmarkIcon class="size-6"/>
-            </button>
+            <CardArchive/>
 
-            <button class="flex gap-1 items-center cursor-pointer">
-                <span class="font-extrabold text-d-lg">{{ likes.length }}</span>
-                <HeartIcon class="size-6"/>
-            </button>
+            <CardLike/>
         </div>
     </NuxtLink>
 </template>
 
 <script setup lang="ts">
 import type { Tool } from '~/types/tool';
-
-import { HeartIcon, BookmarkIcon } from '@heroicons/vue/16/solid'
 
 defineProps<Tool>()
 </script>
