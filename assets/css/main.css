@@ -22,6 +22,7 @@
 
     --text-m-3xl: clamp(1.875rem, 6.5vw, 3.125rem);
 
+    --text-d-xs: 0.875rem;
     --text-d-sm: 1rem;
     --text-d-md: 1.125rem;
     --text-d-base: 1.25rem;
