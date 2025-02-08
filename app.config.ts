@@ -56,6 +56,15 @@ export default defineAppConfig({
                     }
                 }
             }
-        }
+        },
+
+        toast: {
+            slots: {
+                root: 'bg-dark-200 ring-light-100/10 p-5',
+                title: '!text-d-sm',
+                description: '!text-d-xs text-light-200 font-light',
+                close: '!p-0',
+            }
+        },
     }
 });
