@@ -15,7 +15,7 @@
                             <UButton
                                 color="neutral"
                                 variant="link"
-                                icon="i-lucide-x"
+                                icon="i-heroicons-x-mark"
                                 aria-label="Clear input"
                                 @click="clearSearch('title')"
                                 class="cursor-pointer !p-0 !pr-3"
@@ -89,6 +89,11 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+    layout: 'search'
+  })
+
+
 import type { Filter } from '~/types/filter';
 
 
