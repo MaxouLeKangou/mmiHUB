@@ -10,18 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "@nuxt/image": "^1.9.0",
     "@nuxt/ui": "^3.0.0-alpha.11",
     "@nuxtjs/robots": "^5.2.2",
     "@nuxtjs/seo": "^2.1.0",
     "@tailwindcss/vite": "^4.0.0",
     "nuxt": "^3.15.3",
+    "pocketbase": "^0.25.1",
     "reka-ui": "^1.0.0-alpha.8",
     "tailwindcss": "^4.0.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.2",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11"
   }

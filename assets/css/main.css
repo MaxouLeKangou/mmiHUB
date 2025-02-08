@@ -22,6 +22,7 @@
 
     --text-m-3xl: clamp(1.875rem, 6.5vw, 3.125rem);
 
+    --text-d-xs: 0.875rem;
     --text-d-sm: 1rem;
     --text-d-md: 1.125rem;
     --text-d-base: 1.25rem;
@@ -46,6 +47,7 @@
     --ui-text: var(--color-light-100);
 
     --header-height: 7rem;
+    --header-bottom: 6.25rem;
 }
 
 
@@ -74,6 +76,26 @@
     
         &:hover:before {
             width: 35%;
+        }
+    }
+
+    .anim-link a {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0.063rem;
+            border-radius: 2rem;
+            transition: width 0.15s;
+
+            @apply bg-light-100;
+        }
+
+        &:hover:before {
+            width: 100%;
         }
     }
 }
