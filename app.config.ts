@@ -19,7 +19,8 @@ export default defineAppConfig({
                     }
                 },
                 variant: {
-                    outline: 'bg-transparent text-light-100'
+                    outline: 'bg-transparent text-light-100',
+                    iconOnly: '!p-3'
                 }
             }
         },
@@ -33,6 +34,25 @@ export default defineAppConfig({
                     md: {
                         base: 'rounded-md pl-5 pr-10 py-2.5 !text-d-sm',
                         trailing: 'pe-1.5',
+                    }
+                }
+            }
+        },
+
+        selectMenu: {
+            slots: {
+                placeholder: 'text-light-200',
+                content: 'ring-light-100/10',
+                item: '!text-d-sm !p-2 data-highlighted:before:bg-light-100/10',
+                input: 'border-light-100/10 placeholder:!text-light-200'
+            },
+            variants: {
+                color: {
+                    white: 'text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25'
+                },
+                size: {
+                    md: {
+                        base: 'rounded-md pl-5 pr-10 py-2.5 !text-d-sm'
                     }
                 }
             }

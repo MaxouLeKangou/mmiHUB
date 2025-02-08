@@ -1,3 +1,5 @@
+import type { Tag } from '~/types/tag';
+
 export type Tool = {
     collectionId: string;
     collectionName: string;
@@ -9,8 +11,10 @@ export type Tool = {
     description: string;
     website?: string;
     documentation?: string;
-    tags: [];
+    tags: { label: string }[];
     likes: [];
+
+    expand?: { tags: Tag[] };
 
     created: string;
 }

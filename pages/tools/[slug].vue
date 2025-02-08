@@ -48,7 +48,7 @@
                     <p class="font-bold text-d-lg pb-2">Tags</p>
                     <ul class="flex gap-2 flex-wrap">
                         <li v-for="(tag, index) of tool.tags" :key="index">
-                            <Tag :label="tag"/>
+                            <Tag :label="tag.label"/>
                         </li>
                     </ul>
                 </li>
@@ -69,5 +69,6 @@ const slug = useRoute().params.slug
 
 onMounted(async () => {
     tool.value = await getTool(Array.isArray(slug) ? slug[0] : slug)
+    console.log(tool.value)
 })
 </script>

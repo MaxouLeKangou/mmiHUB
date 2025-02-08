@@ -13,7 +13,7 @@
 
         <ul class="flex gap-2">
             <li v-for="(tag, index) of tags" :key="index">
-                <Tag :label="tag"/>
+                <Tag :label="tag.label"/>
             </li>
         </ul>
 
