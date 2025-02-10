@@ -28,7 +28,8 @@ export default defineAppConfig({
         input: {
             variants: {
                 color: {
-                    white: 'text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25'
+                    white: 'text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25',
+                    form: '!bg-transparent text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25'
                 },
                 size: {
                     md: {

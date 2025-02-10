@@ -91,7 +91,7 @@
 <script setup lang="ts">
 definePageMeta({
     layout: 'search'
-  })
+})
 
 
 import type { Filter } from '~/types/filter';
