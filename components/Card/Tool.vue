@@ -11,9 +11,12 @@
 
         <p class="leading-base font-light text-d-sm line-clamp-6 flex-grow">{{ description }}</p>
 
-        <ul class="flex gap-2">
-            <li v-for="(tag, index) of tags" :key="index">
-                <Tag :label="tag.label"/>
+        <ul class="flex gap-2 flex-wrap">
+            <li v-for="(tag, index) in tags.slice(0, 2)" :key="index">
+                <Tag :label="tag.label" />
+            </li>
+            <li v-if="tags.length > 2" class="">
+                <Tag :label="'+' + (tags.length - 2)" />
             </li>
         </ul>
 
