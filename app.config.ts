@@ -1,6 +1,6 @@
 export default defineAppConfig({
     ui: {
-        strategy: "override",
+//        strategy: "override",
 
         button: {
             base: 'cursor-pointer',

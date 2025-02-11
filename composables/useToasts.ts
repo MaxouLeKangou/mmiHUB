@@ -22,5 +22,15 @@ export const useToasts = () => {
         }
     }
 
-    return { unconnectToast };
+    const clipboardToast = () => {
+        const data = {
+            title: 'Copied!',
+            description: 'Password copied to clipboard!',
+        }
+
+        toast.add(data)
+        return undefined
+    }
+
+    return { unconnectToast, clipboardToast };
 };

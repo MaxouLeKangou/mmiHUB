@@ -70,6 +70,11 @@
 
                     </template>
                 </UInput>
+                <p class="text-d-xs font-light underline text-end">
+                    <NuxtLink to="/auth/learn">
+                        How to create a strong password?
+                    </NuxtLink>
+                </p>
 
                 <div class="mt-7">
                     <UButton size="md" color="primary" class="w-full justify-center">SignUp</UButton>
