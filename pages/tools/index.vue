@@ -93,9 +93,7 @@ definePageMeta({
     layout: 'search'
 })
 
-
 import type { Filter } from '~/types/filter';
-
 
 const { getPageTools, getToolsFilter } = useTools();
 const { getTags } = useTags();
@@ -120,16 +118,6 @@ async function Search() {
     clearTimeout(searchTimeout);
 
     searchTimeout = setTimeout(async () => {
-//        if (!filters.value.title.trim()) {
-//            const data = await getPageTools(1);
-//            if (data && data.items) {
-//                tools.value = data.items;
-//            }
-//
-//            page.value = 1
-//            return;
-//        }
-
         try {
             tools.value = await getToolsFilter(filters.value);
             return
