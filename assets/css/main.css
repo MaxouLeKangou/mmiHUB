@@ -15,6 +15,7 @@
     --color-light-300: #868491;
 
     --color-circle: #1E1B4B;
+    --color-transparent: transparent;
 
     --text-m-sm: 0.75rem;
     --text-m-md: 0.875rem;
@@ -103,4 +104,25 @@
 
 .container {
     @apply px-5 max-w-[90rem] sm:px-10 lg:px-5 lg:mx-auto
+}
+
+.learn {
+    p {
+        @apply text-m-big font-bold leading-tight max-w-[62rem]
+    }
+
+    span {
+        display: block;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 0.063rem;
+            transition: width 0.15s;
+
+            @apply bg-light-100 w-[44rem];
+        }
+    }
 }

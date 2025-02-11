@@ -57,7 +57,7 @@
                 </p>
 
                 <div>
-                    <UButton size="sm" color="primary" trailing-icon="i-heroicons-plus">New Tool</UButton>
+                    <UButton size="sm" color="primary" trailing-icon="i-heroicons-plus" @click="unconnectToast()">New Tool</UButton>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
 <script setup lang="ts">
 definePageMeta({
     layout: 'search'
-  })
+})
 
 
 import type { Filter } from '~/types/filter';
@@ -99,6 +99,7 @@ import type { Filter } from '~/types/filter';
 
 const { getPageTools, getToolsFilter } = useTools();
 const { getTags } = useTags();
+const { unconnectToast } = useToasts();
 
 const tools = ref();
 const allTools = ref(0)

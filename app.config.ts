@@ -1,6 +1,6 @@
 export default defineAppConfig({
     ui: {
-        strategy: "override",
+//        strategy: "override",
 
         button: {
             base: 'cursor-pointer',
@@ -28,7 +28,8 @@ export default defineAppConfig({
         input: {
             variants: {
                 color: {
-                    white: 'text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25'
+                    white: 'text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25',
+                    form: '!bg-transparent text-light-100 placeholder:text-light-200 !ring-light-100/10 focus:!ring-light-100/25'
                 },
                 size: {
                     md: {
@@ -56,6 +57,15 @@ export default defineAppConfig({
                     }
                 }
             }
-        }
+        },
+
+        toast: {
+            slots: {
+                root: 'bg-dark-200 ring-light-100/10 p-5',
+                title: '!text-d-sm',
+                description: '!text-d-xs text-light-200 font-light',
+                close: '!p-0',
+            }
+        },
     }
 });

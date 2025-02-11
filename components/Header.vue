@@ -45,7 +45,7 @@
         </NavigationMenuRoot>
 
         <div class="flex justify-end">
-            <UButton color="primary" variant="outline" class="text-light-100">Connection</UButton>
+            <UButton to="/auth/signin" color="primary" variant="outline" class="text-light-100">Connection</UButton>
         </div>
     </header>
 </template>
